@@ -3,7 +3,7 @@ conexao = sqlite3.connect('banco') #conexão do arquivo python com o banco de da
 cursor = conexao.cursor()
 # Questão 1 
 cursor.execute('CREATE TABLE aluno(id INT, nome VARCHAR(100), idade INT, curso VARCHAR(10));')
-# Questão 2
+# Questão 2 
 cursor.execute('INSERT INTO aluno(id,nome,idade,curso) VALUES(1,"Giovanna",23,"Sistema de informação");')
 cursor.execute('INSERT INTO aluno(id,nome,idade,curso) VALUES(2,"Gabriella",18,"medicina");')
 cursor.execute('INSERT INTO aluno(id,nome,idade,curso) VALUES(3,"Anna julia",56,"engenharia");')
